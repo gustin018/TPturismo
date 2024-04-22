@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #142157;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    align-self:center;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header {
+     display: flex;
+     justify-content: space-between;
+     background-color: #aeb0d6;
+     align-items: center;
+     padding: 10px;
+
+     background-size: cover ;
+     min-height: 70px;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 200px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s;
+    margin: 3px;
+    padding: 2px;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.nav-icon{
+    color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+h1{
+    justify-content: center;
+    color: white   ;
+    font-family: serif;
+    align-items: center;
+    display: flex;
+    
+
+}
+
+.galeria {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 20px; 
+  }
+  
+  .contenedor-imagen {
+
+    position: relative; 
+    flex-basis: calc (1200px); 
+    min-width: 250px; 
+    transition: opacity 0.5s ease , background-c; 
+  }
+  
+  .contenedor-imagen img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contenedor-imagen:hover img {
+    opacity: 0.5;
+
+  }
+  
+  .texto-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 100px;
+    display: none;
+    transition: all 0.5s ease;
+    font-family: sans-serif;
+    border-radius: 10px;
+  }
+  
+  .contenedor-imagen:hover .texto-hover {
+    display: block;
+
+  }
+  
+
+  @media (max-width: 768px) {
+    .galeria {
+      flex-direction: column; 
+  
+    .contenedor-imagen {
+      flex-basis: 100%; 
+    }
+  }
+}

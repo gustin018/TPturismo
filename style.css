@@ -1,0 +1,158 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    align-self:center;
+    background-image:
+    radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+     url(img/playa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color:  #142157;
+
+    
+}
+
+
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 6px;
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-size: cover ;
+    min-height: 70px;
+    
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 200px;
+    margin-right: 10px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s;
+    margin: 3px;
+    padding: 2px;
+    
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.nav-icon{
+    color: #ffffff;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.titulo{
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display:inline;
+    
+    
+}
+
+.titulo h1{
+    font-size: 45px;
+    font-family: serif;
+    
+}
+
+ul li{ 
+    list-style-type: none;
+    margin: 50px;
+    align-items: center;
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.div-b{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    margin: 100px;
+    
+}
+.vv-boton{
+    color: white;
+}
+
+button {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.001);
+    border-radius: 15px;
+    transition: background-color 0.5s;
+
+  }
+  
+button:hover{
+    background-color: #00000067;
+}
+
+  button::before {
+    margin-left: auto;
+  }
+  
+  button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  button:hover::after, button:hover::before {
+    width: 100%;
+  }
+
+
+
+@media (max-widht:768px) { 
+    ul li {
+        color: rgb(0, 0, 0);
+    }
+}
