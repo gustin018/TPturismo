@@ -112,6 +112,16 @@ h1{
     display: block;
 
   }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+
+    bottom: 0;
+    width: 100%;
+  }
   
 
   @media (max-width: 768px) {
@@ -121,5 +131,20 @@ h1{
     .contenedor-imagen {
       flex-basis: 100%; 
     }
+  
+    .texto-hover {
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      display: none;
+      transition: all 0.5s ease;
+      font-family: sans-serif;
+      border-radius: 10px;
+    }
+
   }
 }
